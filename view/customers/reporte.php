@@ -1,4 +1,3 @@
-
 <?php
 //Incluimos el fichero de conexion
 Class dbConexion{
