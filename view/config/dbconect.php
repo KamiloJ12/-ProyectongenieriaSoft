@@ -2,7 +2,7 @@
 
 Class Connection{
  
-	private $server = "mysql:host=containers-us-west-49.railway.app;port=6098;dbname=railway";
+	private $server = "mysql:host=containers-us-west-49.railway.app;port=6089;dbname=railway";
 	private $username = "root";
 	private $password = "IBAOn08BrJ34rSAG0Ybu";
 	private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
