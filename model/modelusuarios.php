@@ -9,7 +9,7 @@ class Modelo{
 
   public function __construct(){
       $this->usuarios=array();
-      $this->db=new PDO('mysql:host=localhost;dbname=proyecto_final',"root","");
+      $this->db=new PDO('mysql:host=containers-us-west-49.railway.app;dbname=railway',"containers-us-west-49.railway.app","IBAOn08BrJ34rSAG0Ybu");
   }
   public function mostrar($tabla,$condicion){
       $consulta="SELECT * FROM usuarios";
