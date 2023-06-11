@@ -579,13 +579,15 @@
 
 	<?php
 if(isset($_POST["agregar"])){
-$servername = "localhost";
+
+$servername = "containers-us-west-49.railway.app";
 $username = "root";
-$password = "";
-$dbname = "proyecto_final";
+$password = "IBAOn08BrJ34rSAG0Ybu";
+$dbname = "railway";
 
 // Creamos la conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, "6089");
+
 
 // Revisamos la conexión
 if ($conn->connect_error) {
