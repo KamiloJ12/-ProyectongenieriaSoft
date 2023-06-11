@@ -1,11 +1,11 @@
 <?php
-	$contrasena = '';
+	$contrasena = 'IBAOn08BrJ34rSAG0Ybu';
 	$usuario = 'root';
-	$nombrebd= 'proyecto_final';
+	$nombrebd= 'railway';
 
 	try {
 		$bd = new PDO(
-			'mysql:host=localhost;
+			'mysql:host=containers-us-west-49.railway.app;
 			dbname='.$nombrebd,
 			$usuario,
 			$contrasena,
