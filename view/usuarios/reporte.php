@@ -3,14 +3,15 @@
 //Incluimos el fichero de conexion
 Class dbConexion{
 /* Variables de conexion */
-var $dbhost = "localhost";
+
+var $dbhost = "containers-us-west-49.railway.app";
 var $username = "root";
-var $password = "";
-var $dbname = "proyecto_final";
+var $password = "IBAOn08BrJ34rSAG0Ybu";
+var $dbname = "railway";
 var $conn;
 //Funcion de conexion MySQL
 function getConexion() {
-$con = mysqli_connect($this->dbhost, $this->username, $this->password, $this->dbname) or die("Connection failed: " . mysqli_connect_error());
+$con = mysqli_connect($this->dbhost, $this->username, $this->password, $this->dbname, "6089") or die("Connection failed: " . mysqli_connect_error());
 
 /* Revisamos la conexion */
 if (mysqli_connect_errno()) {
