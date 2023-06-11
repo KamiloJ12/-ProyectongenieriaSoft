@@ -9,7 +9,7 @@ define('dbname', 'railway');
 
 // Connecting database
 try {
-	$connect = new PDO("mysql:host=".dbhost."; dbname=".dbname, dbuser, dbpass);
+	$connect = new PDO("mysql:host=".dbhost."; puerto=6089; dbname=".dbname, dbuser, dbpass);
 	$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e) {
