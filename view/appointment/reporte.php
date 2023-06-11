@@ -1,8 +1,4 @@
-
 <?php
-//Incluimos la libreria PDF
-include_once('../../assets/fpdf/fpdf.php');
-
 //Incluimos el fichero de conexion
 Class dbConexion{
 /* Variables de conexion */
@@ -25,6 +21,8 @@ $this->conn = $con;
 return $this->conn;
 }
 }
+//Incluimos la libreria PDF
+include_once('../../assets/fpdf/fpdf.php');
 
 class PDF extends FPDF
 {
