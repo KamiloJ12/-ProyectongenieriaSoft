@@ -242,7 +242,7 @@ $id=$_SESSION['id'];
 								</div>
 <?php         
 function connect(){
-return new mysqli("localhost","root","","proyecto_final");
+return new mysqli('containers-us-west-49.railway.app', 'root', 'IBAOn08BrJ34rSAG0Ybu', 'railway', '6089');
 }
 $con = connect();
 
