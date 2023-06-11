@@ -5,7 +5,7 @@
 
 	try {
 		$bd = new PDO(
-			'mysql:host=containers-us-west-49.railway.app;
+			'mysql:host=containers-us-west-49.railway.app; port=6089;
 			dbname='.$nombrebd,
 			$usuario,
 			$contrasena,
