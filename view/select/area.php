@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect("localhost","root","","proyecto_final");
+$conexion = mysqli_connect('containers-us-west-49.railway.app', 'root', 'IBAOn08BrJ34rSAG0Ybu', 'railway', '6089');
 
 $el_continente = $_POST['continente'];
 
