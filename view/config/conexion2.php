@@ -6,7 +6,7 @@ $db='railway';
 $user = "root";
 $pass= "IBAOn08BrJ34rSAG0Ybu";
 try {
-  $conexion= new PDO('mysql:host='.$host.';dbname='.$db, $user,$pass);
+  $conexion= new PDO('mysql:host='.$host.';port=6098;dbname='.$db, $user,$pass);
 
 
 } catch (PDOException $e) {
