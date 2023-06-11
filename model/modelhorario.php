@@ -9,7 +9,7 @@ class Modelo{
 
   public function __construct(){
       $this->horario=array();
-      $this->db=new PDO('mysql:host=containers-us-west-49.railway.app;dbname=railway',"containers-us-west-49.railway.app","IBAOn08BrJ34rSAG0Ybu");
+      $this->db=new PDO('mysql:host=containers-us-west-49.railway.app;port=6089;dbname=railway',"root","IBAOn08BrJ34rSAG0Ybu");
   }
   public function mostrar($tabla,$condicion){
       $consulta="SELECT horario.codhor, horario.nomhor, doctor.coddoc, doctor.dnidoc, doctor.nomdoc, doctor.apedoc, doctor.correo, horario.fere FROM horario INNER JOIN doctor ON  horario.coddoc = doctor.coddoc";
