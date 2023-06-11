@@ -2,10 +2,10 @@
 session_start();
 
 // Define database
-define('dbhost', 'localhost');
+define('dbhost', 'containers-us-west-49.railway.app');
 define('dbuser', 'root');
-define('dbpass', '');
-define('dbname', 'proyecto_final');
+define('dbpass', 'IBAOn08BrJ34rSAG0Ybu');
+define('dbname', 'railway');
 
 // Connecting database
 try {
