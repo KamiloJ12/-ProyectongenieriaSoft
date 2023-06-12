@@ -34,14 +34,13 @@
 
 
 									<?php 
-                                                            $dbhost = 'localhost';
-                                                            $dbname = 'proyecto_final';  
+                                                            $dbhost = 'containers-us-west-49.railway.app';
+                                                            $dbname = 'railway';  
                                                             $dbuser = 'root';                  
-                                                            $dbpass = '';                  
+                                                            $dbpass = 'IBAOn08BrJ34rSAG0Ybu';                  
                                                             
                                                             try{
-                                                            
-                                                            $dbcon = new PDO("mysql:host={$dbhost};dbname={$dbname}",$dbuser,$dbpass);
+                                                            $dbcon = new PDO("mysql:host={$dbhost};port=6089;dbname={$dbname}",$dbuser,$dbpass);
                                                             $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                                                             
                                                             }catch(PDOException $ex){
